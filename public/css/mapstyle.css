@@ -1,0 +1,117 @@
+#map{
+    text-align: center;
+    width: auto;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+
+  .wrapper{
+      position: relative;
+      background-color: white;
+      width: 100%;
+      height: 80%;
+  }
+
+  .content {
+      position: absolute;
+      border: 1.7px solid black;
+      padding: 0.1%;
+      margin: 2%;
+      top: 10px;
+      left: 6%;
+      background: white;
+      height: 10%;
+      min-height: 80px;
+      min-width: 190px;
+      text-align: left;
+      color: black;
+  }
+
+  /* Currently Info-Box is not in use */
+  #info-box {
+    text-align: left;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    bottom: 30px;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    float: right;
+  }
+  .legendContainer {
+    margin: 0;
+    background: #0069d9;
+    font-family: sans-serif;
+    border-radius: 3%;
+    
+  }
+  .legendContainer {
+    margin: 2%;
+    
+  }
+
+  .legendContainer, table {
+    font-size: 15px;
+    max-width: 400px;
+    width: auto;
+    border-collapse: separate;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+#legendTitle{
+  color: black;
+  margin: 2%;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.ltd {
+    padding: 13px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .lth {
+    text-align: center;
+    background-color: #0262c9;
+    width: 100px;
+    height: 40px;
+    color: white;
+  }
+
+  .tb tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .tb td {
+    position: relative;
+  }
+
+  .tb td:hover:before {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+
+  .lspan {
+      display: block;
+      float: left;
+      height: 20px;
+      width: 55px;
+      border-radius: 2px;
+    }
