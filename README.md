@@ -6,7 +6,7 @@ It can be used to visualize any kind of data on the UK map, scattered as post co
 E.g NW1, E11 ... 
 
 
-User Manual: 
+# User Manual: 
 
 You can clone the repository, and run application using command npm start. However you must get your Google MAPS API key in order to load Map (https://console.cloud.google.com/google/maps-apis) and insert it on line 633, mapsdemo.ejs file. 
 
@@ -25,7 +25,7 @@ If you have any suggestions how to improve this FrameWork, or if you found some 
 please feel free to provide feedback. 
 
 
-The MIT License:
+# The MIT License:
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
