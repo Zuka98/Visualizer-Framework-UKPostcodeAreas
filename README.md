@@ -1,30 +1,35 @@
 # Visualizer-Framework-UKPostcodeAreas
 
 Description:
-This is the Framework Node.JS web application that was created to visualize data on UK map, scattered as post code area adresses up to 3 level accuracy.
+This Framework uses Node.Js as backend and EJS for templating. 
+It can be used to visualize any kind of data on the UK map, scattered as post code area adresses up to 3 level accuracy.
 E.g NW1, E11 ... 
-
 
 
 User Manual: 
 
-You can navigate to index.js file and start configuring your web application. 
-Make sure to either delete the queries you do not need or correct them, otherwise application will not run. 
-All functions have comments that explain what they do, and where is it necessary to add your configurations.
+You can clone the repository, and run application using command npm start. However you must get your Google MAPS API key in order to load Map (https://console.cloud.google.com/google/maps-apis) and insert it on line 633, mapsdemo.ejs file. 
 
 
-mapdemo.ejs is the file that includes the Google Maps and polygons, (Note that you will need Google Cloud subscription to include your MAP API link in the code, 
-otherwise Map will not load). 
-There are infinite different ways to make use of this library, therefore, only necessary functions are included in each file
-and every additional behaviour is left to be defined by its developers. 
+Start from index.js file and configure connection to your database. 
+
+All the functions have comments that explain what they do, where is it necessary to add your configurations, which one of them can be removed or extended.
+
+mapdemo.ejs includes the Google Maps and function that loads polygons onto it. 
+There are infinitely many different ways how you can make use of this library. In order to minimize complexity, only necessary functions are included and every additional procedure is left to be defined by the developers. 
+
+The UK postcode polygons, GeoJson files were imported from the following Github repository: https://github.com/missinglink/uk-postcode-polygons
 
 
-Source of UK postcode GeoJson files were imported from the following Github repository: https://github.com/missinglink/uk-postcode-polygons
+If you have any suggestions how to improve this FrameWork, or if you found some vulnerabilities,
+please feel free to provide feedback. 
 
 
-If you have any suggestions how to improve this API, or if you found some vulnerability,
-please feel free to contact me and provide feedback. 
+The MIT License:
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-License: MIT
+TThis permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
