@@ -1,7 +1,7 @@
 # Visualizer-Framework-UKPostcodeAreas
 
 Description:
-This Framework uses Node.Js as backend and EJS for templating. 
+This Framework uses Node.Js backend and EJS frontend. 
 It can be used to visualize any kind of data on the UK map, scattered as post code area adresses up to 3 level accuracy.
 E.g NW1, E11 ... 
 
