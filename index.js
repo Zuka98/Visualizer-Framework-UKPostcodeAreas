@@ -1,6 +1,5 @@
 var express = require('express');
-
-// You can modify the libraries you wish to use and configure it the way you want. 
+ 
 var app = express();
 var debug = require('debug')('app');
 var morgan = require('morgan');
@@ -21,7 +20,6 @@ var config = {
     password: 'password',
     database: 'databaseName',
     port: 0,
-    //Configure the SSL from your Cloud provider
     ssl: true
 };
 
@@ -37,9 +35,8 @@ app.use('/fonts', express.static(path.join(__dirname, 'public/fonts')));
 app.use(express.static(path.join(__dirname, '/public/')));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
-// Use of myRouter should be last thing
-app.use('/', myRouter);
 
+app.use('/', myRouter);
 
 //Functions below are useful if you are visualizing data according to weeks or months. 
 function getNumberOfWeek() {
@@ -135,17 +132,15 @@ myRouter.route('/postreqexample')
         res.end("Finish");
     })
 
-//Start website from this get request
 app.get('/', function (req, res) {
     res.render('index', {
-        //Render data and pass to ejs file some paratmeters such as page title and navigation bar data.
         title: 'pageTitle',
         nav: [{ link: '/', title: 'Home' }, { link: '/examplemap', title: 'Example-Map' }]
     });
 });
 
 
-//To display mock up data for demo purposes
+//Display mock up data for demo purposes
 myRouter.route('/examplemap').get((req, res) => {
     res.render('map_demo', {
         title: 'pageTitle',
