@@ -10,3 +10,7 @@ You can clone the repository, and run application using command npm start. Howev
 
 The UK postcode polygons, GeoJson files were imported from the following Github repository: https://github.com/missinglink/uk-postcode-polygons
 
+
+# Visit website for the demo: 
+https://uk-data-visualizer.herokuapp.com/
+https://uk-data-visualizer.herokuapp.com/examplemap
