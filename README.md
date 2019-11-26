@@ -8,8 +8,7 @@ E.g NW1, E11 ...
 
 # User Manual: 
 
-You can clone the repository, and run application using command npm start. However you must get your Google MAPS API key in order to load Map (https://console.cloud.google.com/google/maps-apis) and insert it on line 633, mapsdemo.ejs file. 
-
+You can clone the repository, and run application using command npm start. However you must get your Google MAPS API key in order to load Map (https://console.cloud.google.com/google/maps-apis). In this project API key was indicated in mapsdemo.ejs file. 
 
 Start from index.js file and configure connection to your database. 
 
