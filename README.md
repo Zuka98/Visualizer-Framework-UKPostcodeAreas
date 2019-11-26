@@ -6,16 +6,9 @@ It can be used to visualize any kind of data on the UK map, scattered as post co
 E.g NW1, E11 ... 
 
 
-# User Manual: 
-
+# Get started: 
 You can clone the repository, and run application using command npm start. However you must get your Google MAPS API key in order to load Map (https://console.cloud.google.com/google/maps-apis). In this project API key was indicated in mapsdemo.ejs file. 
 
-Start from index.js file and configure connection to your database. 
-
-All the functions have comments that explain what they do, where is it necessary to add your configurations, which one of them can be removed or extended.
-
-mapdemo.ejs includes the Google Maps and function that loads polygons onto it. 
-There are infinitely many different ways how you can make use of this library. In order to minimize complexity, only necessary functions are included and every additional procedure is left to be defined by the developers. 
 
 The UK postcode polygons, GeoJson files were imported from the following Github repository: https://github.com/missinglink/uk-postcode-polygons
 
