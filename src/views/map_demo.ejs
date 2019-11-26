@@ -494,7 +494,7 @@ function loadData(tbName) {
     if(!(i >= arr.length)){
     areaAdress = arr[i];
     $.ajax({
-      url: "/UK-Adresses/",
+      url: "/Postcode_Polygons/",
       async: 'true',
       //force to handle it as text
       dataType: "text",
@@ -630,6 +630,6 @@ function loadData(tbName) {
 		<script src="js/jquery.flipster.min.js"></script>
     <script src="js/main.js"></script>
     
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<Google Maps Api Key> callback=initMap"> </script>
+    <script async defer src="API KEY HERE"> </script>
 	</body>
 </html>
