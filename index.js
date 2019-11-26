@@ -150,9 +150,9 @@ myRouter.route('/examplemap').get((req, res) => {
 
 
 //Send corresponding GeoJson file when requested
-myRouter.route('/UK-Adresses')
+myRouter.route('/Post_Code_Polygons')
     .get((req, res) => {
-        var myURL = 'UK-Adresses/' + req.url.split('?')[1] + '.geojson';
+        var myURL = 'Post_Code_Polygons/' + req.url.split('?')[1] + '.geojson';
         let rawdata = fs.readFileSync(myURL);
         jsondata = JSON.parse(rawdata);
         res.send(jsondata);
