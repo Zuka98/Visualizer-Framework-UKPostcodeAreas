@@ -9,7 +9,7 @@ You can clone the repository, and run application using command npm start.
 
 In order to load Map (https://console.cloud.google.com/google/maps-apis) you must get Google MAPS API key. 
 
-In this project API key was indicated in mapsdemo.ejs file, as it is exposed to public, developer must restrict the access to it, so only their website can access it.
+In this project API key was indicated in mapsdemo.ejs file. As it is exposed to the public, developer must restrict the access to it, so only their website can use it.
 
 For more information about protecting API keys view: https://support.google.com/googleapi/answer/6310037 .
 
