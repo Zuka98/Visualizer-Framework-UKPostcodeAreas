@@ -135,7 +135,7 @@ myRouter.route('/postreqexample')
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'pageTitle',
-        nav: [{ link: '/', title: 'Home' }, { link: '/examplemap', title: 'Example-Map' }]
+        nav: [{ link: '/', title: 'Home' }, { link: '/examplemap', title: 'Demo' }]
     });
 });
 
@@ -144,7 +144,7 @@ app.get('/', function (req, res) {
 myRouter.route('/examplemap').get((req, res) => {
     res.render('map_demo', {
         title: 'pageTitle',
-        nav: [{ link: '/', title: 'Home' }, { link: '/examplemap', title: 'Example-Map' }]
+        nav: [{ link: '/', title: 'Home' }, { link: '/examplemap', title: 'Demo' }]
     });
 })
 
