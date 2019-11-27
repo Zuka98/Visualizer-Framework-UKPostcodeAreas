@@ -90,9 +90,6 @@ function getDateOfISOWeek(w, y) {
 
 //End of functions dealing with time
 
-
-
-
 function insertToDatabase(param1, param2, param3) {
     const conn = new mysql.createConnection(config);
     var tbname = 'somename';
@@ -120,9 +117,7 @@ function insertToDatabase(param1, param2, param3) {
 }
 
 
-/* *************** POST AND GET REQUESTS *************** */
-
-
+/* *************** Routes *************** */
 //Post request example
 myRouter.route('/postreqexample')
     .post((req, res) => {
